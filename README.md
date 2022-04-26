@@ -8,7 +8,20 @@ This is used in the demonstration of development of Ansible Playbooks.
   - Install all required dependencies
   - Install and Configure Web Server
   - Start Web Server
-   
+
+## 0. Build image, run and test
+
+    docker build . -f Dockerfile
+    docker images
+    docker run --name flask -p 8080:8080 32af3886755b
+
+  Open a browser and go to URL
+  
+  http://127.0.0.1:8080/
+  
+  http://172.17.0.2:8080/
+  
+
 ## 1. Install all required dependencies
   
   Python and its dependencies
